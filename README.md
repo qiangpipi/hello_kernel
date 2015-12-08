@@ -3,6 +3,7 @@ It's a sample for kernel coding.
 
 ####Precondition####
 Ya, you will need kernel source code to proceed.
+
 1. Go to [www.kernel.org](https://www.kernel.org/) to download one.
 2. Build the kernel tree
 ```
