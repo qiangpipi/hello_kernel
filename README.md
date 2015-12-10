@@ -19,6 +19,7 @@ make install (this will install new kernel into grub)
 ####Try to use####
 ```
 git clone https://github.com/qiangpipi/hello_kernel.git
+vi Makefile (var KERNELDIR need to be changed here!!)
 make
 insmod ./hello.ko
 lsmod |grep hello
