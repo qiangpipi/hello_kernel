@@ -3,6 +3,9 @@ It's a sample for kernel coding.
 
 ####Precondition####
 Ya, you will need kernel source code to proceed.
+```
+sudo  apt-get install build-essential kernel-package  libncurses5-dev
+```
 
 1. Go to [www.kernel.org](https://www.kernel.org/) to download one.
 2. Build the kernel tree
