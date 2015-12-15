@@ -3,6 +3,8 @@
         ({type __x=(x); type __y=(y); __x<__y?__x:__y;})
 #define min(x,y) \
         ({const typeof(x) __x=x;const typeof(y) __y=y;(void)(&__x==&__y);__x<__y?__x:__y;})
+#define pr_debug(fmt,arg...) \
+        printf(fmt,##arg)
 
 int main(){
         int ia,ib,mini;
@@ -19,5 +21,7 @@ int main(){
         minf=min(fa,fb);
         printf("min: min int: %d\n",mini);
         printf("min: min float: %f\n",minf);
+        pr_debug("Test print 1 without arg\n");
+        pr_debug("Test print with ia: %d and fa: %f\n",ia,fa);
         return 0;
 }
