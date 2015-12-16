@@ -25,6 +25,9 @@ insmod ./hello.ko
 lsmod |grep hello
 rmmod hello
 ```
+>File in knowledge:
+>>c_knowledge.c: some useful macro define
+
 ####Troubles####
 1. While build the kernel tree, you will be asked for some new configuration with Yes or No. If you met some error while compile the kernel, try to No to those new configuration.
 2. If you download the different version of the kernel with you current using, make sure to 'make install'. Or u will get error when running insmod like wrong version or different version something.
