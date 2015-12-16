@@ -20,3 +20,4 @@ module_exit(hello_exit);
 MODULE_LICENSE("Dual BSD/GPL");
 MODULE_AUTHOR("Your name");
 MODULE_DESCRIPTION("Hello world module");
+MODULE_VERSION("1.0");

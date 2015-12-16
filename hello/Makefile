@@ -1,5 +1,5 @@
 obj-m := hello.o
-KERNELDIR := /lib/modules/3.13.11-ckt29/build
+KERNELDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
 modules:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules

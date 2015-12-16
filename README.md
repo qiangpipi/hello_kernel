@@ -16,14 +16,25 @@ make modules
 make modules_install
 make install (this will install new kernel into grub)
 ```
-####Try to use####
+####Try to use hello####
 ```
 git clone https://github.com/qiangpipi/hello_kernel.git
+cd ./hello
 vi Makefile (var KERNELDIR need to be changed here!!)
 make
 insmod ./hello.ko
 lsmod |grep hello
 rmmod hello
+```
+####Try to use hello####
+```
+git clone https://github.com/qiangpipi/hello_kernel.git
+cd ./hello_para
+vi Makefile (var KERNELDIR need to be changed here!!)
+make
+insmod ./hello_para.ko
+lsmod |grep hello_para
+rmmod hello_para
 ```
 >File in knowledge:
 >>c_knowledge.c: some useful macro define
