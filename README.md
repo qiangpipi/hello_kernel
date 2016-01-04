@@ -11,10 +11,10 @@ sudo  apt-get install build-essential kernel-package  libncurses5-dev
 2. Build the kernel tree
 ```
 sudo make oldconfig (or make menuconfig)
-make
-make modules
-make modules_install
-make install (this will install new kernel into grub)
+sudo make
+sudo make modules
+sudo make modules_install
+sudo make install (this will install new kernel into grub)
 ```
 ####Try to use hello####
 ```
